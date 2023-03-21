@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rampart+One&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu {
+  width: 2em;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+  background: rgb(162, 209, 243);
+  padding: 5px 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0 15px;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.navbar li {
+  padding: 5px;
+}
+.navbar li:hover {
+  background: rgb(71, 143, 232);
+}
+.navbar li:hover a {
+  color: white;
+}
+
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .nav-link {
+    display: none;
+  }
+}
+.open-nav {
+  transform: translateX(0%);
+}
+
+aside {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: rgb(205, 243, 249);
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+aside ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+aside ul a {
+  color: black;
+  padding: 0.75em 2em;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+aside ul a:hover {
+  background: rgb(71, 143, 232);
+  color: white;
+}
+aside .close {
+  float: right;
+  margin: 2em;
+  width: 2.5em;
+}
+
+body {
+  background: rgb(178, 238, 236);
+  color: black;
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: url(../images/f1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  height: 700px;
+  max-height: 900px;
+  width: 100%;
+}
+.hero .b1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px;
+  flex: 1;
+}
+.hero h1 {
+  font-size: 60px;
+  margin: 10px;
+  text-align: center;
+  color: rgb(28, 28, 132);
+}
+.hero h2 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.s1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: stretch;
+}
+.s1 .faq {
+  margin: 10px 10px;
+  background: white;
+  border-radius: 15px;
+  max-width: 450px;
+  flex: 1;
+}
+.s1 .faq h2 {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  color: rgb(9, 83, 120);
+}
+.s1 .faq h2 i {
+  font-size: smaller;
+}
+.s1 .faq h3 {
+  font-size: small;
+  color: rgb(9, 83, 120);
+  margin: 0 10px;
+}
+.s1 .faq #accordion {
+  margin: 10px 0;
+  max-width: 450px;
+  height: auto;
+  flex: 1;
+}
+.s1 .faq #accordion li {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.s1 .faq #accordion li label {
+  border-radius: 10px;
+  margin: 3px 0;
+  background: rgb(175, 209, 239);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  cursor: pointer;
+  color: rgb(25, 0, 255);
+  font-weight: bolder;
+  font-style: italic;
+}
+.s1 .faq #accordion li label span {
+  color: rgb(0, 0, 255);
+  font-size: 25px;
+}
+.s1 .faq #accordion label + input[type=radio] {
+  display: none;
+}
+.s1 .faq #accordion label + input[type=radio]:checked + .content {
+  max-height: 400px;
+}
+.s1 .faq #accordion .content {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  font-size: medium;
+}
+.s1 form {
+  background: white;
+  border-radius: 15px;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px;
+  max-width: 450px;
+  flex: 1;
+}
+.s1 form input {
+  padding: 5px;
+}
+.s1 form h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px;
+  color: rgb(9, 83, 120);
+}
+.s1 form .name {
+  color: rgb(27, 27, 143);
+  display: flex;
+  flex-direction: column;
+}
+.s1 form .name i {
+  padding: 0 2px;
+}
+.s1 form .pass {
+  color: rgb(27, 27, 143);
+  display: flex;
+  flex-direction: column;
+}
+.s1 form .pass i {
+  padding: 0 2px;
+}
+.s1 form .mail {
+  color: rgb(27, 27, 143);
+  display: flex;
+  flex-direction: column;
+}
+.s1 form .mail i {
+  padding: 0 2px;
+}
+.s1 form .rest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.s1 form .rest p {
+  font-size: 22px;
+  text-align: center;
+  margin: 10px 0;
+}
+.s1 form .rest div {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.s1 form .rest div label {
+  padding: 0 5px;
+  font-size: medium;
+}
+.s1 form .button {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.s1 form .button button {
+  width: 30%;
+  margin: 0 5px;
+}
+
+@media (max-width: 770px) {
+  .hero {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  .s1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+  }
+  .s2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

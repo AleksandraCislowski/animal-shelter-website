@@ -1,0 +1,97 @@
+.hero {
+  background-image: url(../images/f2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  width: 100%;
+}
+.hero h1 {
+  color: white;
+  align-self: center;
+}
+.hero div {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+.hero p {
+  color: white;
+}
+.hero p a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.header {
+  color: rgb(16, 45, 190);
+  text-align: center;
+  font-size: x-large;
+  margin: 15px 0 0;
+}
+
+.s2 {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.s2 a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+.s2 .bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 450px;
+  background: rgb(218, 240, 247);
+  border-radius: 25px;
+  margin: 5px;
+  padding: 5px;
+  flex: 1;
+}
+.s2 .bio img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: auto;
+  max-height: 50vh;
+  align-self: center;
+  margin: 5px;
+  border-radius: 15px;
+}
+.s2 .bio .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 5px;
+}
+.s2 .bio .container a {
+  margin: 5px 0;
+}
+
+@media (max-width: 770px) {
+  .hero {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 1100px) {
+  .s2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+  }
+}
+@media (max-width: 550px) {
+  .hero div h1 {
+    font-size: medium;
+  }
+  .hero div p {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=about.css.map */
