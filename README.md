@@ -1,6 +1,6 @@
 # "High Paw!"
 
-My second website created to learn how to build a user form, accordion with some questions and a carousel with some pictures. I also learned how to use grid layout.
+My second website created to learn how to build a user form, accordion with some questions and a carousel with some pictures. I also learned how to use grid layout, as well as multipage website.
 
 ## Information
 
